@@ -4,7 +4,7 @@ import json
 import os
 
 # ── Configuration ──────────────────────────────────────────────
-TOKEN          = "YOUR_BOT_TOKEN"
+TOKEN          = os.environ.get("DISCORD_TOKEN")
 CHANNEL_ID     = 1489338057206272162   # ID of the channel to track
 ROLE_ID        = 1513981949084176404   # ID of the role to assign
 MESSAGE_LIMIT  = 50                   # Messages required to earn the role
